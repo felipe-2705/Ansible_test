@@ -1,0 +1,10 @@
+- hosts: all
+  user: felipecastro
+  gather_facts: no
+  pre_tasks:
+  - name: 'atualizando repositorios'
+    raw: 'sudo yum update'
+  - name: 'instalando python'
+    raw: 'sudo yum install python'
+  roles:
+  - {role: install-k8s, tags: ["install_Kubernetes"]}

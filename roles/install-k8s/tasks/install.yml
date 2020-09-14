@@ -1,0 +1,4 @@
+- name: Instalando o Docker
+  get_url: 
+    url: https://get.docker.com
+    dest: bash

@@ -1,0 +1,9 @@
+- name: 'instalando kubectl'
+  shell: curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+- name: 'Autorizando execução'  
+  shell: chmod +x ./kubectl
+- name: 'movendo arquivo'
+  shell: mv ./kubectl /usr/local/bin/kubectl
+  become: yes
+- name: 'autocomplete'
+  shell: alias k=kubectl; complete -F __start_kubectl k

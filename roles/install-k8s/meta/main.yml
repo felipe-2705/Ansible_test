@@ -1,7 +1,7 @@
 galaxy_info:
-  author: Felipe augusto Ferreira de Castro
-  description: Just a quick teste for ansible 
-  company: Landix
+  author: your name
+  description: your role description
+  company: your company (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
